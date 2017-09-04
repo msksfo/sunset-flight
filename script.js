@@ -6,12 +6,11 @@ canvas.height = window.innerHeight;
 
 var x = 0; 
 
-
 var airplane = '\u2708';
-var airplaneWidth = c.measureText(airplane).width;
+//var airplaneWidth = c.measureText(airplane).width;
 
-var yMin = airplaneWidth;
-var yMax = innerHeight - airplaneWidth;
+var yMin = 50;
+var yMax = innerHeight - yMin;
 
 var y = Math.floor(Math.random() * (yMax - yMin)) + yMin;
 
@@ -28,7 +27,7 @@ function animate(){
 	
 	 x += 2;
 
-	if ( x > innerWidth + airplaneWidth){
+	if ( x > innerWidth + airplaneWidth){ // if the airplane goes off the page, return to x coordinate of 0
 		x = 0;
 		}
 }
