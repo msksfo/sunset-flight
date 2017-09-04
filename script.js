@@ -7,7 +7,7 @@ canvas.height = window.innerHeight;
 var x = 0; 
 
 var airplane = '\u2708';
-//var airplaneWidth = c.measureText(airplane).width;
+var airplaneWidth = c.measureText(airplane).width;
 
 var yMin = 50;
 var yMax = innerHeight - yMin;
